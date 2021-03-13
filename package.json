@@ -1,0 +1,22 @@
+{
+  "name": "egy-trips",
+  "version": "1.0.0",
+  "description": "Landing page for EGY Trips",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hosamelshazly92/EG-Trips.git"
+  },
+  "author": "Hosam Elshazly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hosamelshazly92/EG-Trips/issues"
+  },
+  "homepage": "https://github.com/hosamelshazly92/EG-Trips#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
