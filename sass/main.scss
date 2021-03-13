@@ -1,12 +1,18 @@
-/* 
-Primary #0b1e36
-Primary-Light #364560
-Primary-Dark #000011
 
-Secondary #eec710
-Secondary-Light #fff953
-Secondary-Dark #b69600
-*/
+// primary colors
+$color-primary: #0b1e36;
+$color-primary-light: #364560;
+$color-primary-dark: #000011;
+
+// secondary colors
+$color-secondary: #eec710;
+$color-secondary-light: #fff953;
+$color-secondary-dark: #b69600;
+
+// netural colors
+$color-white: #fff;
+$color-black: #000;
+$color-grey: #777;
 
 * {
     margin: 0;
@@ -23,13 +29,13 @@ body {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
     line-height: 1.7;
-    color: #0b1e36;
+    color: $color-primary;
     padding: 3rem;
 }
 
 .header {
     height: 95vh;
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2), #fff), url(./Assets/img/img-1.jpg);
+    background-image: linear-gradient(to top, rgba($color-black, 0.2), $color-white), url(../assets/img/img-1.jpg);
     background-size: cover;
     background-position: bottom;
 
@@ -148,17 +154,17 @@ body {
 
 .btn:hover {
     transform: translateY(-0.4rem);
-    box-shadow: 0 0.8rem 1.8rem rgba(75, 47, 47, 0.4);
+    box-shadow: 0 0.8rem 1.8rem rgba($color-primary, 0.4);
 }
 
 .btn:active {
     transform: translateY(-0.1rem);
-    box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0.2rem 0.6rem rgba($color-black, 0.4);
 }
 
 .btn--white {
-    background-color: #fff;
-    color: #0b1e36;
+    background-color: $color-white;
+    color: $color-primary;
     font-size: 2rem;
     font-weight: 600;
 }
@@ -179,7 +185,7 @@ body {
 }
 
 .btn-white::after {
-    background-color: #fff;
+    background-color: $color-white;
 }
 
 .btn:hover::after {
